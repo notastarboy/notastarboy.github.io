@@ -1,1 +1,72 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('assets/common/BricolageGrotesque.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+}
+.navbar {
+    background-color: var(--brand-lavender);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+}
+
+/* Buttons */
+.dropbtn {
+    background-color: var(--brand-lavender);
+    color: black;
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.dropbtn:hover {
+    background-color: var(--brand-gold);
+}
+
+/* Dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--brand-lilac);
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--brand-gold);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
